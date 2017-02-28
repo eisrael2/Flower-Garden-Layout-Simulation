@@ -43,8 +43,13 @@ Finally create three buttons for save, retrieve, and exit. We’ll explore some 
 Example:
 
 FileChooser fileChooser = new FileChooser();
+
 fileChooser.setInitialDirectory(new File("C:\\soccerPlayers"));
+
 fileChooser.setTitle("Open Resource File");
+
 fileChooser.getExtensionFilters().add(new ExtensionFilter("Image Files", "*.png", "*.jpg", "*.gif"));
+
 File selectedFile = fileChooser.showOpenDialog(teamBuilder.primaryStage);
+
 image = new Image("File:" + selectedFile.toString(),80,100,false,false);
