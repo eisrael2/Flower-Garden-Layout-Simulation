@@ -4,7 +4,7 @@ Third Assignment In Object Oriented Software Design
 
 Requirements:
 
-1. Start by setting up your initial environment. Note that this includes the “tool kit” on the left hand side including the items you can select (flowers, vegetables, flower beds, trees, birds etc), the garden (green rectangle) on the right hand side, and the red buttons. All the other right and side items will be placed into the garden by dragging. This must be a JavaFX application – and by now you should know how to get that started and to display something onto the screen. Suggestions: Think about what classes you will include in your design – Flower (probably vegetables can be treated like flowers with different colors), Tree, Animal(?), Flower bed. As a first step create a JavaFX application that lays out the framework.
+Start by setting up your initial environment. Note that this includes the “tool kit” on the left hand side including the items you can select (flowers, vegetables, flower beds, trees, birds etc), the garden (green rectangle) on the right hand side, and the red buttons. All the other right and side items will be placed into the garden by dragging. This must be a JavaFX application – and by now you should know how to get that started and to display something onto the screen. Suggestions: Think about what classes you will include in your design – Flower (probably vegetables can be treated like flowers with different colors), Tree, Animal(?), Flower bed. As a first step create a JavaFX application that lays out the framework.
 
 What goes into a Flower class (similar for each of the node classes). Position, Color, and Shape. It needs to contain a Circle shape – and provide a getter method to return that shape upon demand. Note: It is this shape that you’ll add to the Scene Graph: e.g. pane.getChildren().add(redCircle); The red circle inside the Flower instance references the SAME red circle that is on the scene graph. Therefore you can manipulate it within its Flower object and that will cause it to move on the GUI.
 
@@ -48,14 +48,3 @@ fileChooser.setTitle("Open Resource File");
 fileChooser.getExtensionFilters().add(new ExtensionFilter("Image Files", "*.png", "*.jpg", "*.gif"));
 File selectedFile = fileChooser.showOpenDialog(teamBuilder.primaryStage);
 image = new Image("File:" + selectedFile.toString(),80,100,false,false);
-You will have to figure out what format you want to save your file in. You can choose any format, but we’ll be looking at JSON and serialization in class on Thursday 11th
-Turn in Source code and jar file.
-
-Grades will be assigned according to:
-1. Initial UML design. Do this first. (5 points)
-2. Journal – explaining your design decisions (5 points)
-3. Functioning elegant code (40 points). We will specifically look for:
-a. Mouse event handlers working effectively.
-b. Composite pattern correctly implemented.
-c. File IO working. Save and Retrieve.
-d. Exit button should close the app. (Will go over in class on Thursday).
